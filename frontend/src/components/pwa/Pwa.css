@@ -1,0 +1,34 @@
+.pwa{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 150px;
+    width: 100%;
+    background-color: #7F37FB;
+    color: #fff;
+    font-size: 20px;
+}
+.pwa-btn {
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+}
+.install{
+    background-color: #fff;
+    color: #7F37FB;
+}
+.install:hover{
+    background-color: #DAA9FF;
+    color: #fff;
+}
+.dismiss{
+    color: #DAA9FF;
+    background-color: #7F37FB;
+}
+.dismiss:hover{
+    background-color: #DAA9FF;
+    color: #7F37FB;
+}
