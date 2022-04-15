@@ -31,7 +31,7 @@ class ApiImageController extends AbstractController
         
             $baseurl = $request->getScheme() . '://' . $request->getHttpHost() . $request->getBasePath();
             $img = $image->getIllustration();
-            $link = $baseurl."/img/".$img;
+            $link = $baseurl."/assets/img/".$img;
 
             $image->setIllustration($link);
 
