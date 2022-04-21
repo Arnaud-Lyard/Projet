@@ -3,7 +3,7 @@ import image from './modules/image';
 
 const store = createStore ({
   modules: {
-    image
+    image,
   }
 })
 
