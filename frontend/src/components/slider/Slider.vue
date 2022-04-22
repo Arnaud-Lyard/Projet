@@ -1,18 +1,18 @@
 <template>
     <div class="slider">
 
-        <button @click="decrementImageItems" type="button" class="btn btn-left">
+        <button @click="decrementcarrousselOneItems" type="button" class="btn btn-left">
             <font-awesome-icon class="icone" :icon="['fas', 'chevron-left']" />
         </button> 
 
             <div class="container-slides" :style="{transform: `translateX(${index}px)`, transition: `${transition}`}">
 
-                <div v-if="imageItems[0]" class="content">
-                <img class="img-slider" :src="imageItems[0].Illustration" :alt="imageItems[0].name">
+                <div v-if="carrousselOneItems[0]" class="content">
+                <img class="img-slider" :src="carrousselOneItems[0].Illustration" :alt="carrousselOneItems[0].name">
                 </div>
 
             </div>
-        <button @click="incrementImageItems" type="button" class="btn btn-right">
+        <button @click="incrementcarrousselOneItems" type="button" class="btn btn-right">
             <font-awesome-icon class="icone" :icon="['fas', 'chevron-right']" />
         </button>
                               
@@ -44,16 +44,16 @@ export default {
         }
     },
     computed: {
-    ...mapGetters(['imageItems']),
+    ...mapGetters(['carrousselOneItems']),
   },
   mounted() {
-    this.$store.dispatch('getImageItems');
+    this.$store.dispatch('getcarrousselOneItems');
   },
   created() {
   },
     methods: {
-        ...mapActions(['incrementImageItems']),
-        ...mapActions(['decrementImageItems']),
+        ...mapActions(['incrementcarrousselOneItems']),
+        ...mapActions(['decrementcarrousselOneItems']),
         next() {
             if(this.index === -1000) {
                 this.transition = "none";

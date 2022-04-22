@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Slider />
+    <Slider />
   </div>
 </template>
 
@@ -14,3 +15,7 @@ export default {
   }
 }
 </script>
+
+<style scoped src="./HomeView.css">
+
+</style>

@@ -1,9 +1,9 @@
 import { createStore } from 'vuex';
-import image from './modules/image';
+import carrousselone from './modules/carrousselone';
 
 const store = createStore ({
   modules: {
-    image,
+    carrousselone,
   }
 })
 
