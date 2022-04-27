@@ -12,11 +12,12 @@
 
 export default {
   mounted() {
-    this.$store.dispatch('carrousselOne/getcarrousselItems'); // Appel de l'API via la méthode dispatch() pour le 1er carroussel
-    this.$store.dispatch('carrousselTwo/getcarrousselItems'); // Appel de l'API via la méthode dispatch() pour le 2eme carroussel
-    this.$store.dispatch('carrousselThree/getcarrousselItems'); // Appel de l'API via la méthode dispatch() pour le 1er carroussel
-    this.$store.dispatch('carrousselFour/getcarrousselItems'); // Appel de l'API via la méthode dispatch() pour le 1er carroussel
-    this.$store.dispatch('carrousselFive/getcarrousselItems'); // Appel de l'API via la méthode dispatch() pour le 1er carroussel
+    // CALL API with dispatch() method for slider
+    this.$store.dispatch('carrousselOne/getcarrousselItems');
+    this.$store.dispatch('carrousselTwo/getcarrousselItems');
+    this.$store.dispatch('carrousselThree/getcarrousselItems');
+    this.$store.dispatch('carrousselFour/getcarrousselItems');
+    this.$store.dispatch('carrousselFive/getcarrousselItems');
   },
 }
 
