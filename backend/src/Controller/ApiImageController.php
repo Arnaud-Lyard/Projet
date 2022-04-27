@@ -9,6 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Serializer\SerializerInterface;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ApiImageController extends AbstractController
 {
@@ -25,7 +26,6 @@ class ApiImageController extends AbstractController
     {
 
         $images = $this->entityManager->getRepository(Image::class)->findAll();
-
 
         foreach( $images as $image){
         
@@ -47,5 +47,6 @@ class ApiImageController extends AbstractController
         $response->headers->set('Content-Type', 'application/json');
 
         return $response;
+
     }
 }

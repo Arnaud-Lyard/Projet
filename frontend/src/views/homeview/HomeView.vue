@@ -1,17 +1,28 @@
 <template>
   <div class="home">
-    <Slider />
-    <Slider />
+    <SliderOne />
+    <SliderTwo />
+    <SliderThree />
+    <SliderFour />
+    <SliderFive />
   </div>
 </template>
 
 <script>
-import Slider from '@/components/slider/Slider.vue'
+import SliderOne from '@/components/sliderone/SliderOne.vue'
+import SliderTwo from '@/components/slidertwo/SliderTwo.vue'
+import SliderThree from '@/components/sliderthree/SliderThree.vue'
+import SliderFour from '@/components/sliderfour/SliderFour.vue'
+import SliderFive from '@/components/sliderfive/SliderFive.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    Slider
+    SliderOne,
+    SliderTwo,
+    SliderThree,
+    SliderFour,
+    SliderFive
   }
 }
 </script>
