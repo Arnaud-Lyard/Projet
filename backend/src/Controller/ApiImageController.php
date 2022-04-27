@@ -25,24 +25,31 @@ class ApiImageController extends AbstractController
     public function index(SerializerInterface $serializer, Request $request): Response
     {
 
-        $images = $this->entityManager->getRepository(Image::class)->findAll();
+        // Find 10 result in entity Image
+        $images = $this->entityManager->getRepository(Image::class)->findByTen();
 
+        // mix result in random order
+        shuffle($images);
+
+        // SET Image URL for each Data
         foreach( $images as $image){
         
-            $baseurl = $request->getScheme() . '://' . $request->getHttpHost() . $request->getBasePath();
-            $img = $image->getIllustration();
-            $link = $baseurl."/assets/img/".$img;
-
-            $image->setIllustration($link);
+                $baseurl = $request->getScheme() . '://' . $request->getHttpHost() . $request->getBasePath();
+                $img = $image->getIllustration();
+                $link = $baseurl."/assets/img/".$img;
+    
+                $image->setIllustration($link);
 
         }
 
+        // Serialize Data in JSON format
         $data = $serializer->serialize(
             $images,
             'json',
             ['groups' => 'image']
         );
 
+        // Return a response with header
         $response = new Response($data);
         $response->headers->set('Content-Type', 'application/json');
 
