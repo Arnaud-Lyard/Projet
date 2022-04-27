@@ -1,9 +1,17 @@
 import { createStore } from 'vuex';
-import carrousselone from './modules/carrousselone';
+import carrousselOne from './modules/carrousselone';
+import carrousselTwo from './modules/carrousseltwo';
+import carrousselThree from './modules/carrousselthree';
+import carrousselFour from './modules/carrousselfour';
+import carrousselFive from './modules/carrousselfive';
 
 const store = createStore ({
   modules: {
-    carrousselone,
+    carrousselOne,
+    carrousselTwo,
+    carrousselThree,
+    carrousselFour,
+    carrousselFive,
   }
 })
 
