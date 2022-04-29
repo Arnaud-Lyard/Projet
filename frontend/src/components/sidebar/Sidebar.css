@@ -1,0 +1,50 @@
+.sidebar {
+    color: white;
+    background-color: var(--sidebar-bg-color);
+    float: left;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar-link{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+  .sidebar h1 {
+    height: 2.5em;
+    margin-top: 100px;
+  }
+  .collapse-icon {
+    position: relative;
+    top: 0;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.2s linear;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .rotate-180 {
+    transform: rotate(180deg);
+    transition: 0.2s linear;
+  }
+  .openmenu{
+    height: 30px;
+    width: 30px;
+    fill: white;
+  }
+  .openmenu:hover{
+    fill: black;
+  }
+  .logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .navlink{
+    display: flex;
+  }

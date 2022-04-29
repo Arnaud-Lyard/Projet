@@ -4,5 +4,5 @@ module.exports = defineConfig({
   pwa: {
     name: "Liquid Measurement Converter",
     themeColor: "#ffd100"
-  }
+  },
 })

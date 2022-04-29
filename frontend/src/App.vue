@@ -1,16 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Carroussel aléatoire</router-link> |
-    <router-link to="/about">A propos</router-link>
-  </nav>
-
-  <router-view/>
+        <section>
+            <Pwa />
+            <Sidebar />
+           
+            <div :style="{ 'margin-left': sidebarWidth }">
+                <Header />
+            </div>
+            <router-view />
+        </section>
 </template>
 
 <script>
 
+import Pwa from '@/components/pwa/Pwa'
+import Header from '@/components/header/Header'
+import Sidebar from '@/components/sidebar/Sidebar'
+import { sidebarWidth } from '@/components/sidebar/state'
 
 export default {
+  components: { 
+    Sidebar,
+    Header,
+    Pwa,
+  },
+  setup() {
+    return { sidebarWidth }
+  },
   mounted() {
     // CALL API with dispatch() method for slider
     this.$store.dispatch('carrousselOne/getcarrousselItems');
@@ -24,6 +39,10 @@ export default {
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
