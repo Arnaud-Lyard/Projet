@@ -1,4 +1,30 @@
+
 .home{
     display: flex;
     justify-content: space-around;
+    padding-top: 70px;
+    flex-wrap: wrap;
+}
+.update{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.update-btn {
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #7F37FB;
+    font-size: 20px;
+    color: #fff;
+}
+.update-btn:hover{
+    background-color: #DAA9FF;
+    color: #7F37FB;
+}
+.test{
+    height: 1000px;
 }
