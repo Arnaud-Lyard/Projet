@@ -25,3 +25,6 @@
 .mode{
   cursor: pointer;
 }
+.right {
+  width : calc(90% - 300px)
+}

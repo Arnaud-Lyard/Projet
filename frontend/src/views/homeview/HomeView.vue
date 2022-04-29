@@ -1,7 +1,6 @@
 <template>
             
 <div class="container">
-      <!-- <Header /> -->
     <div class="home">
         <SliderOne />
         <SliderTwo />
@@ -10,18 +9,13 @@
         <SliderFive />
     </div>
     <div class="update">
-        <button @click="carrousselreload" class="update-btn">Recherche</button>
-    </div>
-    <div class="test">
-
+        <button @click="carrousselreload" class="update-btn">Nouvelle Recherche</button>
     </div>
 </div>
 </template>
 
 <script>
 
-
-// import Header from '@/components/header/Header'
 import SliderOne from '@/components/sliderone/SliderOne.vue'
 import SliderTwo from '@/components/slidertwo/SliderTwo.vue'
 import SliderThree from '@/components/sliderthree/SliderThree.vue'
@@ -36,7 +30,6 @@ export default {
     SliderThree,
     SliderFour,
     SliderFive,
-    // Header,
   },
   methods: {
     carrousselreload(){

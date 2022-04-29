@@ -4,7 +4,7 @@
     flex-direction: column;
     height: 150px;
     width: 100%;
-    background-color: #7F37FB;
+    background-color: #2f44a5;
     color: #fff;
     font-size: 20px;
 }
@@ -18,17 +18,17 @@
 }
 .install{
     background-color: #fff;
-    color: #7F37FB;
+    color: #2f44a5;
 }
 .install:hover{
-    background-color: #DAA9FF;
+    background-color: #182d86;
     color: #fff;
 }
 .dismiss{
-    color: #DAA9FF;
-    background-color: #7F37FB;
+    color: #fff;
+    background-color: #182d86;
 }
 .dismiss:hover{
-    background-color: #DAA9FF;
-    color: #7F37FB;
+    background-color: #fff;
+    color: #2f44a5;
 }

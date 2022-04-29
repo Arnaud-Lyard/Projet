@@ -17,14 +17,11 @@
     transition: 0.3s;
     font-size: 20px;
     cursor: pointer;
-    background-color: #7F37FB;
+    background-color: #2f44a5;
     font-size: 20px;
     color: #fff;
 }
 .update-btn:hover{
-    background-color: #DAA9FF;
-    color: #7F37FB;
-}
-.test{
-    height: 1000px;
+    background-color: #182d86;
+    color: #fff;
 }

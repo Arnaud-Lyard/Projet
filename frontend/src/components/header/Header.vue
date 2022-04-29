@@ -1,8 +1,9 @@
 <template>
-    <div class="header" :v-if="collapsed">
+    <div class="header" :class="{ right : !collapsed}">
        
         <div class="header-left">
-            <span class="burger" @click="toggleSidebar"><font-awesome-icon :icon="['fas', 'bars']" /></span>
+            <span v-if="collapsed" class="burger" @click="toggleSidebar"><font-awesome-icon :icon="['fas', 'bars']" /></span>
+            <span v-if="!collapsed" class="burger" @click="toggleSidebar"><font-awesome-icon :icon="['fas', 'x']" /></span>
              Menu
         </div>
            
@@ -13,8 +14,6 @@
 </template>
 
 <script>
-import { onMounted } from '@vue/runtime-core';
-
 import { collapsed, toggleSidebar, sidebarWidth } from '../sidebar/state'
 
 export default {
