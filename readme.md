@@ -1,46 +1,33 @@
-# Projet
+# Project
+Creation of a carousel with random image management
 
-Création d'un carroussel avec gestion aléatoire des images
+## Getting Started
+Download the Git repository to initialize the project.
 
-## Pour commencer
-
-Télécharger le dépôt Git pour initialiser le projet
-
-### Pré-requis
-
-- Composer
-- Node.js
-
-### Installation
-
-#### Backend
-Créer une base de données et modifier le fichier .env pour qu'il pointe vers la base de données.
-```bash
-DATABASE_URL=mysql://root@127.0.0.1:3306/nom_de_la_base_de_donnees
+## Prerequisites
+Composer
+Node.js
+## Installation
+### Backend
+Create a database and modify the .env file to point to the database.
 ```
-Lancer la commande ``composer install`` pour installer Symfony et les dépendances.
-Ensuite, lancer la commande ``symfony console doctrine:migration:migrate`` pour créer la base de données.
+DATABASE_URL=mysql://root@127.0.0.1:3306/database_name
+```
+Run the command `composer install` to install Symfony and its dependencies.
+Then, run the command symfony console `doctrine:migration:migrate` to create the database.
 
-#### Frontend
-Lancer la commande ``npm install`` pour installer les modules.
+### Frontend
+Run the command `npm install` to install the necessary modules.
 
-## Démarrage
+## Starting the Application
+### Backend
+Run the command `symfony serve` to launch Symfony.
+Access the backend of the application locally at: http://127.0.0.1:8000
 
-#### Backend
-Lancer la commande ``symfony serve`` pour lancer Symfony.
-Accès à la partie backend de l'application en local : http://127.0.0.1:8000
+### Frontend
+Run the command `npm run serve` to launch Vue.js.
+Access the frontend of the application locally at: http://127.0.0.1:8080
 
-#### Frontend
-Lancer la commande ``npm run serve`` pour lancer Vue.js.
-Accès à la partie frontend de l'application en local : http://127.0.0.1:8080
-
-### Technologies utilisées
-
+## Technologies Used
 Symfony version 5
 Vue.js version 3
-
-### Aides à la réalisation du projet
-
-[Carroussel](https://www.youtube.com/watch?v=YAhCVgKcis4)
-
-Et les documentations des technologies utilisées.
